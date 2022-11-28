@@ -1,0 +1,4 @@
+page index
+<% @todo_lists.each do |todo_list|%>
+	<%= link_to todo_list.title, todo_list_path(todo_list) %>
+<% end %>
